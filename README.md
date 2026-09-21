@@ -25,7 +25,9 @@ weights/
   rarnet.pth
 ```
 
-Use the official FSC147 prepared images and annotations from [FSC147 / FamNet](https://github.com/cvlab-stonybrook/LearningToCountEverything). Density-map ground truth is not required. A compatible complete RARNet checkpoint must be supplied separately; weights and datasets are not bundled in this repository.
+Use the official FSC147 prepared images and annotations from [FSC147 / FamNet](https://github.com/cvlab-stonybrook/LearningToCountEverything). Density-map ground truth is not required.
+
+Download the [FSC147 model checkpoint (OneDrive)](https://1drv.ms/u/c/6f121aa25da87e73/IQDDa7NiHe5LSqR8Hf_m_wYeARy48378M2iJaWSAgo5jSRA?e=4GPYIW). The file is `RARNet_FSC147_repeat07_checkpoint162.pth` (approximately 1.20 GB). Save it as `weights/rarnet.pth`, or set `CHECKPOINT` to its downloaded location.
 
 The loader accepts a tensor state dictionary or a trusted checkpoint containing a `model` state dictionary. Historical parameter names are translated by `models/checkpoint_compat.py`; model parameters are then loaded strictly. Retained inactive parameter slots support existing checkpoint files.
 
