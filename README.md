@@ -63,5 +63,3 @@ models/Block/             # Transformer blocks
 models/checkpoint_compat.py
 util/pos_embed.py
 ```
-
-This release contains inference code only.
