@@ -64,4 +64,4 @@ models/checkpoint_compat.py
 util/pos_embed.py
 ```
 
-This release contains inference code only. The model implementation builds on CACViT; the upstream copyright and license are retained in `LICENSE`.
+This release contains inference code only.
