@@ -15,7 +15,7 @@ def sha256(path):
             digest.update(chunk)
     return digest.hexdigest()
 
-def run(data_root, checkpoint, output_root, splits=('val', 'test'), device=None):
+def run(data_root, checkpoint, output_root, splits=('test',), device=None):
     if not splits or any(split not in ('val', 'test') for split in splits):
         raise ValueError('Only FSC147 val/test splits are supported')
     checkpoint=Path(checkpoint)

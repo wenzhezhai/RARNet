@@ -45,7 +45,7 @@ Then run:
 python run_fsc147.py
 ```
 
-The script evaluates validation (1,286 images) and test (1,190 images) using the same supplied checkpoint. It writes per-image predictions and MAE/RMSE summaries into a new timestamped output directory. No parameter selection occurs during evaluation.
+The script evaluates only the test split (1,190 images) using the supplied checkpoint. It writes per-image predictions and MAE/RMSE summaries into a new timestamped output directory. No parameter selection occurs during evaluation.
 
 ## Fixed inference protocol
 

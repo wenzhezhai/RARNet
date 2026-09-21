@@ -8,4 +8,4 @@ OUTPUT_ROOT = ROOT / 'outputs' / 'fsc147'
 
 if __name__ == '__main__':
     from inference.runner import run
-    run(DATA_ROOT, CHECKPOINT, OUTPUT_ROOT, splits=('val', 'test'))
+    run(DATA_ROOT, CHECKPOINT, OUTPUT_ROOT, splits=('test',))
